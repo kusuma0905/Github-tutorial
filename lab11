@@ -1,0 +1,100 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyNaUEdlULkaVK0T2DTuYqzK",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/kusuma0905/Github-tutorial/blob/main/lab11\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 1,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "_ofCakNKJjgr",
+        "outputId": "204b3420-fc33-4fca-9135-1244ce96a374"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "The maximum value of f(x) = x^2 over the interval [-5, 3] is: 25\n"
+          ]
+        }
+      ],
+      "source": [
+        "def maximize_square_function(a, b):\n",
+        "    # Check function values at the interval endpoints\n",
+        "    f_a = a**2\n",
+        "    f_b = b**2\n",
+        "    # Find the maximum value between f(a) and f(b)\n",
+        "    max_value = max(f_a, f_b)\n",
+        "    return max_value\n",
+        "\n",
+        "# Example usage\n",
+        "a = -5\n",
+        "b = 3\n",
+        "result = maximize_square_function(a, b)\n",
+        "print(f\"The maximum value of f(x) = x^2 over the interval [{a}, {b}] is: {result}\")\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def maximize_square_function(a, b):\n",
+        "\n",
+        "    f_a = a**2\n",
+        "    f_b = b**2\n",
+        "\n",
+        "    max_value = max(f_a, f_b)\n",
+        "    return max_value\n",
+        "\n",
+        "\n",
+        "a = -5\n",
+        "b = 3\n",
+        "result = maximize_square_function(a, b)\n",
+        "print(f\"The maximum value of f(x) = x^2 over the interval [{a}, {b}] is: {result}\")\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "t_OsaqfUKwJ4",
+        "outputId": "0edbce5c-f3a7-446b-96b5-612d4bc51027"
+      },
+      "execution_count": 2,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "The maximum value of f(x) = x^2 over the interval [-5, 3] is: 25\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
